@@ -28,7 +28,7 @@
     font-weight: 500px;
 }
 .main .greet span{
-    background: -webkit-linear-gradient(16deg,#4b90ff,#ff5546);
+    background: -webkit-linear-gradient(16deg,#fffc54,#f71717);
     -webkit-background-clip: text; /* For older versions of Chrome and Safari */
     background-clip: text; /* Standard property */
     color: transparent;
@@ -95,7 +95,7 @@
     color: #f6f7f8;
 }
 .search-box :placeholder-shown{
-    color: -webkit-linear-gradient(16deg,#4b90ff,#ff5546);
+    color: -webkit-linear-gradient(16deg,#fffc4b,#ff4646);
 }
 .search-box input::placeholder {
     color: #a5a4a4;
@@ -144,7 +144,7 @@
 border-radius: 4px;
 border: none;
 background-color: #f6f7f8;
-background: linear-gradient(to right,#b1d5ee,#c953e98a,#9ed7ff);
+background: linear-gradient(to right,#fffc54,#f71717, #fffc54);
 background-size: 800px 50px;
 height: 20px;
 animation: loader 3s infinite linear;

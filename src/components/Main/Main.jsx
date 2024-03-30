@@ -19,7 +19,7 @@ const Main = () => {
 	return (
 		<div className="main">
 			<div className="nav">
-				<p>Gemini</p>
+				<p>Ariel</p>
 				<img src={assets.user_icon} alt="" />
 			</div>
 			<div className="main-container">
@@ -121,8 +121,8 @@ const Main = () => {
 					</div>
 					<div className="bottom-info">
 						<p>
-							Gemini may display inaccurate info, including about people, so
-							double-check its responses. Your privacy & Gemini Apps
+							Ariel may display inaccurate info, including people, so
+							double-check it's responses.
 						</p>
 					</div>
 				</div>
