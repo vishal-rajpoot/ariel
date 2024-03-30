@@ -65,11 +65,11 @@ const Main = () => {
 								className="card"
 								onClick={() => {
 									handleCardClick(
-										"Create a Script for the youtube video about coding "
+										"Create a Script for instagram content about astrology"
 									);
 								}}
 							>
-								<p>Create a Script for the youtube video about coding </p>
+								<p>Create a Script for instagram content about astrology </p>
 								<img src={assets.code_icon} alt="" />
 							</div>
 						</div>
