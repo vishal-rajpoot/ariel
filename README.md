@@ -41,5 +41,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 Ariel AI is built using various open-source technologies and libraries. Special thanks to the creators and contributors of Vite, React, Gemini API, and other dependencies used in this project.
 
 ---
-
-Feel free to customize this README file further to provide more detailed information about your Ariel AI model and its usage. If you have any questions or need assistance, don't hesitate to reach out!
