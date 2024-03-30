@@ -134,6 +134,9 @@
     align-items: start;
     gap: 20px;
 }
+.result-data img{
+    filter: invert(100%); 
+}
 .loader{
     width: 100%;
     display: flex;
