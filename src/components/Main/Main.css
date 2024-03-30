@@ -170,6 +170,12 @@ animation: loader 3s infinite linear;
 }
 
 @media (max-width:600px) {
+    .main{
+        position: unset;
+    }
+    .main-bottom{
+        position: unset;
+    }
     .main-bottom input{
         flex: none;
         width: 150px;
