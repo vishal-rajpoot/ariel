@@ -3,118 +3,185 @@
     min-height: 100vh;
     padding-bottom: 15vh;
     position: relative;
+    color: #e2e6eb;
 }
-
 .main .nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-size: 22px;
     padding: 20px;
-    color: #585858;
+    color: #e2e6eb;
 }
-
 .main .nav img{
-    width: 40px;
+    width: 30px;
     border-radius: 50%;
 }
-
 .main-container{
     max-width: 900px;
     margin: auto;
 }
-
-.main .greet{
-    margin: 50px 0px;
+.main-container .greet{
+    margin: 30px 0px;
     font-size: 56px;
-    color: #c4c7c5;
-    font-weight: 500;
-    padding: 20px;
+    color:#c4c7c5;
+    font-weight: 500px;
 }
-
 .main .greet span{
-    background: linear-gradient(16deg, #4b90ff, #ff5546);
+    background: -webkit-linear-gradient(16deg,#4b90ff,#ff5546);
     -webkit-background-clip: text; /* For older versions of Chrome and Safari */
     background-clip: text; /* Standard property */
     color: transparent;
 }
-
 .main .cards{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fill,minmax(180px,1fr));
     gap: 15px;
-    padding: 20px;
 }
-
 .main .card{
     height: 200px;
     padding: 15px;
-    background-color: #f0f4f9;
+    background-color: #303030;
     border-radius: 10px;
     position: relative;
     cursor: pointer;
 }
-
 .main .card img{
     width: 35px;
     padding: 5px;
     position: absolute;
-    background-color: white;
     border-radius: 20px;
     bottom: 10px;
     right: 10px;
+    background: rgb(155, 155, 155);
 }
-
 .main .card p{
-    color: #585858;
+    color: #c4c7c5;
     font-size: 17px;
 }
-
 .main .card:hover{
-    background-color: #dfe4df;
-}
+    background-color: #5f5f5f;
 
-.main-bottom{
+}
+.main-bottom {
     position: absolute;
     bottom: 0;
-    width: 80%;
-    min-width: 900px;
+    width: 100%;
+    max-width: 900px;
     padding: 0px 20px;
     margin: auto;
 }
-
 .search-box{
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
-    background-color: #f0f4f9;
+    background-color: #303030;
     padding: 10px 20px;
     border-radius: 50px;
 }
 .search-box img{
     width: 24px;
     cursor: pointer;
+    filter: invert(100%); 
 }
-
 .search-box input{
     flex: 1;
     background: transparent;
-    border: none;
-    outline: none;
+    border: 0;
+    outline: 0;
+    padding: 8px;
     font-size: 18px;
+    color: #f6f7f8;
 }
-
+.search-box :placeholder-shown{
+    color: -webkit-linear-gradient(16deg,#4b90ff,#ff5546);
+}
+.search-box input::placeholder {
+    color: #a5a4a4;
+}
 .search-box div{
     display: flex;
     align-items: center;
     gap: 15px;
 }
-
-
 .main .bottom-info{
     font-size: 13px;
     margin: 15px auto;
     text-align: center;
     font-weight: 300;
+}
+.result{
+    padding: 0px 5%;
+    max-height: 70vh;
+    overflow-y: scroll;
+}
+.result::-webkit-scrollbar{
+    display: none;
+}
+.result-title{
+    margin: 40px 0px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.result img{
+    width: 40px;
+    border-radius: 50px;
+}
+.result-data{
+    display: flex;
+    align-items: start;
+    gap: 20px;
+}
+.loader{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.loader hr{
+border-radius: 4px;
+border: none;
+background-color: #f6f7f8;
+background: linear-gradient(to right,#b1d5ee,#c953e98a,#9ed7ff);
+background-size: 800px 50px;
+height: 20px;
+animation: loader 3s infinite linear;
+}
+
+@keyframes loader{
+    0%{
+        background-position: -800px 0px;
+
+    }
+    100%{
+        background-position: 800px 0px;
+    }
+}
+
+.result-data p{
+    font-size: 17px;
+    font-weight: 300px;
+    line-height: 1.8;
+}
+
+@media (max-width:600px) {
+    .main-bottom input{
+        flex: none;
+        width: 150px;
+    }
+    .main-bottom img{
+        width: 20px;
+    }
+    .search-box{
+        margin: 20px 0px;
+        padding: 5px 10px;
+    }
+    .search-box div{
+        gap: 5px;
+    }
+    .greet{
+        margin: 20px 0px;
+    }
 }
